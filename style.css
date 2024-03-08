@@ -69,7 +69,7 @@ main{
     height: 100%;
     display: flex;
     justify-content: center;
-    text-align: center;
+    align-items: center;
 }
 
 body{
@@ -90,6 +90,20 @@ body{
     font-family: "RosieBrown", serif;
     font-weight: normal;
     font-size: 4rem;
+}
+
+.row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding-bottom: 20vh;
+}
+
+.btrfly{
+    width: 30%;
+    margin: 0;
 }
 
 /*this is for tablets*/
@@ -123,6 +137,20 @@ body{
         font-weight: normal;
         font-size: 6rem;
     }
+
+    .row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        padding-bottom: 20vh;
+    }
+    
+    .btrfly{
+        width: 30%;
+        margin: 0;
+    }
 }
 
 /*this is for computers*/
@@ -140,7 +168,7 @@ body{
         height: 100%;
         display: flex;
         justify-content: center;
-        text-align: center;
+        align-items: center;
     }
 
     .container-carrossel{
@@ -156,7 +184,21 @@ body{
         color: white;
         font-family: "RosieBrown", serif;
         font-weight: normal;
-        font-size: 9rem;
+        font-size: 8rem;
+        margin: 0;
+    }
+
+    .row{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        width: 90%;
+        padding-bottom: 20vh;
+    }
+    
+    .btrfly{
+        width: 30%;
+        margin: 0;
     }
 }
 
