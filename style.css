@@ -37,23 +37,6 @@
     margin-left: 2%;
 }
 
-.align {
-    width: 40%;
-    display: flex;
-    margin-right: 2%;
-}
-
-.link{
-    color: #F0D3F7;
-    text-decoration: none;
-    width: 36%;
-    text-align: end;
-}
-
-#home{
-    width: 28%;
-}
-
 .igBtn{
     color: #F0D3F7;
     width: 10%;
@@ -101,9 +84,34 @@ body{
     padding-bottom: 20vh;
 }
 
-.btrfly{
-    width: 30%;
-    margin: 0;
+.menu{
+    width: 40%;
+    margin-right: 2%;
+}
+
+.menuBtn{
+    display: block;
+    background-color: transparent;
+    border: none;
+    color: #F0D3F7;
+    cursor: pointer;
+}
+
+.menu .align{
+    display: none;
+    min-width: 100px;
+    background-color: #F0D3F7;
+}
+
+.menu .align:hover{
+    display: block;
+}
+
+.menu .link{
+    display: block;
+    color: #120D31;
+    text-decoration: none;
+    padding: 10px 15px;
 }
 
 /*this is for tablets*/
@@ -138,6 +146,36 @@ body{
         font-size: 6rem;
     }
 
+    .menu{
+        width: 40%;
+        margin-right: 2%;
+    }
+    
+    .menuBtn{
+        display: block;
+        background-color: transparent;
+        border: none;
+        color: #F0D3F7;
+        cursor: pointer;
+    }
+
+    .menu .align{
+        display: none;
+        min-width: 100px;
+        background-color: #F0D3F7;
+    }
+
+    .menu .align:hover{
+        display: block;
+    }
+    
+    .menu .link{
+        display: block;
+        color: #120D31;
+        text-decoration: none;
+        padding: 10px 15px;
+    }
+
     .row{
         display: flex;
         flex-direction: column;
@@ -145,11 +183,6 @@ body{
         align-items: center;
         width: 90%;
         padding-bottom: 20vh;
-    }
-    
-    .btrfly{
-        width: 30%;
-        margin: 0;
     }
 }
 
@@ -188,17 +221,38 @@ body{
         margin: 0;
     }
 
+    .menu{
+        width: 40%;
+        display: flex;
+        margin-right: 2%;
+    }
+    
+    .menu .menuBtn{
+        display: none;
+    }
+
+    .menu .align {
+        width: 100%;
+        display: flex;
+    }
+    
+    .menu .link{
+        color: #F0D3F7;
+        text-decoration: none;
+        width: 36%;
+        text-align: end;
+    }
+    
+    .menu #home{
+        width: 28%;
+    }
+
     .row{
         display: flex;
         align-items: center;
         flex-direction: row;
         width: 90%;
         padding-bottom: 20vh;
-    }
-    
-    .btrfly{
-        width: 30%;
-        margin: 0;
     }
 }
 
