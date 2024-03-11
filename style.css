@@ -34,6 +34,7 @@
     color: #F0D3F7;
     font-family: "RosieBrown", serif;
     font-weight: normal;
+    margin: 0;
     margin-left: 2%;
 }
 
@@ -85,7 +86,7 @@ body{
 }
 
 .menu{
-    width: 40%;
+    width: 20%;
     margin-right: 2%;
 }
 
@@ -147,7 +148,7 @@ body{
     }
 
     .menu{
-        width: 40%;
+        width: 30%;
         margin-right: 2%;
     }
     
@@ -234,6 +235,8 @@ body{
     .menu .align {
         width: 100%;
         display: flex;
+        flex-direction: row;
+        background-color: transparent;
     }
     
     .menu .link{
@@ -245,6 +248,13 @@ body{
     
     .menu #home{
         width: 28%;
+    }
+
+    .menu .align:hover{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        background-color: transparent;
     }
 
     .row{
@@ -271,6 +281,7 @@ body{
     align-items: center;
     border: none;
     border-radius: 8%;
+    cursor: pointer;
 }
 
 #nextBtn{
@@ -282,4 +293,5 @@ body{
     align-items: center;
     border: none;
     border-radius: 8%;
+    cursor: pointer;
 } 
