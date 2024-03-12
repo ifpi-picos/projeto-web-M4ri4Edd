@@ -38,12 +38,6 @@
     margin-left: 2%;
 }
 
-.igBtn{
-    color: #F0D3F7;
-    width: 10%;
-    margin-right: 1%;
-}
-
 /*this is for phones*/
 main{
     background-image: url(imgs/54\ Sem\ Título.jpg);
@@ -85,36 +79,6 @@ body{
     padding-bottom: 20vh;
 }
 
-.menu{
-    width: 20%;
-    margin-right: 2%;
-}
-
-.menuBtn{
-    display: block;
-    background-color: transparent;
-    border: none;
-    color: #F0D3F7;
-    cursor: pointer;
-}
-
-.menu .align{
-    display: none;
-    min-width: 100px;
-    background-color: #F0D3F7;
-}
-
-.menu .align:hover{
-    display: block;
-}
-
-.menu .link{
-    display: block;
-    color: #120D31;
-    text-decoration: none;
-    padding: 10px 15px;
-}
-
 /*this is for tablets*/
 @media only screen and (min-width: 600px){
     body{
@@ -145,36 +109,6 @@ body{
         font-family: "RosieBrown", serif;
         font-weight: normal;
         font-size: 6rem;
-    }
-
-    .menu{
-        width: 30%;
-        margin-right: 2%;
-    }
-    
-    .menuBtn{
-        display: block;
-        background-color: transparent;
-        border: none;
-        color: #F0D3F7;
-        cursor: pointer;
-    }
-
-    .menu .align{
-        display: none;
-        min-width: 100px;
-        background-color: #F0D3F7;
-    }
-
-    .menu .align:hover{
-        display: block;
-    }
-    
-    .menu .link{
-        display: block;
-        color: #120D31;
-        text-decoration: none;
-        padding: 10px 15px;
     }
 
     .row{
@@ -214,47 +148,63 @@ body{
         overflow: hidden;
     }
 
+    .navigation{
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        border-radius: 4px;
+        overflow: hidden;
+        transition: width 0.5s, height 0.5s;
+        transition-delay: 0s, 0.7s;
+    }
+    
+    .navigation.active{
+        width: 250px;
+        height: 350px;
+    }
+    
+    .navigation .menuToggle{
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        background-color: yellowgreen;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    
+    .navigation .menuToggle.active{
+        background-color: blue;
+    }
+    
+    .navigation .menuToggle::before{
+        content: '+';
+        position: absolute;
+        font-size: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        width: 50px;
+        height: 50px;
+        font-weight: 400;
+        transition: 0.5s;
+    }
+    
+
     .title{
         color: white;
         font-family: "RosieBrown", serif;
         font-weight: normal;
         font-size: 8rem;
         margin: 0;
-    }
-
-    .menu{
-        width: 40%;
-        display: flex;
-        margin-right: 2%;
-    }
-    
-    .menu .menuBtn{
-        display: none;
-    }
-
-    .menu .align {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        background-color: transparent;
-    }
-    
-    .menu .link{
-        color: #F0D3F7;
-        text-decoration: none;
-        width: 36%;
-        text-align: end;
-    }
-    
-    .menu #home{
-        width: 28%;
-    }
-
-    .menu .align:hover{
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        background-color: transparent;
     }
 
     .row{

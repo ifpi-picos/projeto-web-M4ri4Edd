@@ -48,3 +48,10 @@ carrossel.addEventListener('transitionend', () => {
 
 // Event listener for window resize
 window.addEventListener('resize', updateSize);
+
+//dropdown menu 
+let navigation = document.querySelector('.navigation');
+document.querySelector('.menuToggle').onclick = function(){
+    this.classList.toggle('active');
+    navigation.classList.toggle('active')
+};
