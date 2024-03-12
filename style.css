@@ -27,7 +27,6 @@
     align-items: center;
     font-family: "LTSaeda", sans-serif;
     font-size: large;
-    text-shadow: 2px 2px #120D31;
 }
 
 .name{
@@ -36,6 +35,7 @@
     font-weight: normal;
     margin: 0;
     margin-left: 2%;
+    text-shadow: 2px 2px #120D31;
 }
 
 /*this is for phones*/
@@ -84,8 +84,8 @@ body{
 }
 
 .navigation.active{
-    width: 250px;
-    height: 350px;
+    width: 200px;
+    height: 200px;
 }
 
 .navigation .menuToggle{
@@ -97,19 +97,16 @@ body{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color: yellowgreen;
+    background-color: #F0D3F7;
     cursor: pointer;
     transition: 0.5s;
 }
 
 .navigation .menuToggle.active{
-    background-color: blue;
+    background-color: #302F4D;
 }
 
 .navigation .menuToggle::before{
-    content: '+';
-    position: absolute;
-    font-size: 2em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -176,8 +173,8 @@ body{
     }
     
     .navigation.active{
-        width: 250px;
-        height: 350px;
+        width: 200px;
+        height: 200px;
     }
     
     .navigation .menuToggle{
@@ -189,19 +186,16 @@ body{
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        background-color: yellowgreen;
+        background-color: #F0D3F7;
         cursor: pointer;
         transition: 0.5s;
     }
     
     .navigation .menuToggle.active{
-        background-color: blue;
+        background-color: #302F4D;
     }
     
     .navigation .menuToggle::before{
-        content: '+';
-        position: absolute;
-        font-size: 2em;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -252,11 +246,11 @@ body{
 
     .navigation{
         position: absolute;
-        top: 25px;
-        right: 25px;
-        width: 50px;
-        height: 50px;
-        background-color: white;
+        top: 15px;
+        right: 15px;
+        width: 40px;
+        height: 40px;
+        background-color: #F0D3F7;
         border-radius: 4px;
         overflow: hidden;
         transition: width 0.5s, height 0.5s;
@@ -264,8 +258,8 @@ body{
     }
     
     .navigation.active{
-        width: 250px;
-        height: 350px;
+        width: 160px;
+        height: 200px;
     }
     
     .navigation .menuToggle{
@@ -273,33 +267,33 @@ body{
         top: 0;
         left: 0;
         width: 100%;
-        height: 50px;
+        height: 40px;
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        background-color: yellowgreen;
+        background-color: #F0D3F7;
         cursor: pointer;
         transition: 0.5s;
     }
     
     .navigation .menuToggle.active{
-        background-color: blue;
+        background-color: #120D31;
     }
     
     .navigation .menuToggle::before{
-        content: '+';
-        position: absolute;
-        font-size: 2em;
         display: flex;
         justify-content: center;
         align-items: center;
-        color: white;
+        color: #120D31;
         width: 50px;
         height: 50px;
         font-weight: 400;
         transition: 0.5s;
     }
     
+    .navigation .menuToggle.active::before{
+        color: #F0D3F7;
+    }
 
     .title{
         color: white;
@@ -347,3 +341,11 @@ body{
     border-radius: 8%;
     cursor: pointer;
 } 
+
+.item{
+    text-decoration: none;
+    text-shadow: none;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
