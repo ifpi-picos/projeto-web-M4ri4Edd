@@ -60,6 +60,10 @@ body{
     margin-right: 10px;
 }
 
+.item a:active{
+    color: #302F4D;
+}
+
 .carrossel{
     display: flex;
     width: 100%;
