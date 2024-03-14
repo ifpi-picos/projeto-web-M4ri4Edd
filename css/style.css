@@ -141,7 +141,7 @@ main .homepage{
     font-family: "Birds", cursive;
     font-weight: normal;
     font-size: 8rem;
-    text-shadow: 3px 3px #120D31;
+    text-shadow: 1px 1px 10px #000, 3px 3px #120D31;
     width: auto;
     margin: 0;
 }
@@ -331,13 +331,7 @@ main .homepage{
     }
 
     .title{
-        color: #F0D3F7;
-        font-family: "Birds", cursive;
-        font-weight: normal;
         font-size: 5rem;
-        text-shadow: 3px 3px #120D31, 0 0 6px #120D31 ;
-        width: auto;
-        margin: 0;
     }
 
     .imgbox{
