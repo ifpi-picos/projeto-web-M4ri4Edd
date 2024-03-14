@@ -270,7 +270,7 @@ main .homepage{
 /*====================this is for phones====================*/
 @media only screen and (max-width: 600px){
     main{
-        background-image: url(imgs/58\ Sem\ Título.webp);
+        background-image: url(imgs/58\ Sem\ Título.jpg);
         background-color: #120D31;
         background-size: cover;
         width: 100%;
