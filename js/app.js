@@ -25,6 +25,16 @@ const updateSize = () => {
 // Initial size update
 updateSize();
 
+// Initial position of the carousel
+carrossel.style.transition = "none";
+counter = 1;
+carrossel.style.transform = 'translateX('+ (-size * counter) +'px)';
+
+setTimeout(() => {
+    carrossel.style.transition = "transform 0.4s ease-in-out";
+}, 100);
+
+
 // Button listeners
 
 nextButton.addEventListener('click', () => {
