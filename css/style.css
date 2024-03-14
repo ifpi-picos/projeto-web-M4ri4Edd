@@ -1,7 +1,7 @@
 /*====================The specifics====================*/
 
 @font-face {
-    font-family: LTSaeda;
+    font-family: Roboto;
     src: url(fonts/Roboto-Condensed.ttf);
 }
 
@@ -121,7 +121,7 @@ main .homepage{
 }
 
 .intro{
-    font-family: "LTSaeda", sans-serif;
+    font-family: "Roboto", sans-serif;
     color: #fff;
     font-size: larger;
     text-align: justify;
