@@ -36,15 +36,6 @@ carrossel.addEventListener('transitionend', () => {
     }
 });
 
-// Button listeners
-nextButton.addEventListener('click', () => {
-    // Your existing nextButton click event handler
-});
-
-prevButton.addEventListener('click', () => {
-    // Your existing prevButton click event handler
-});
-
 // Event listener for window resize
 window.addEventListener('resize', updateSize);
 // Button listeners
