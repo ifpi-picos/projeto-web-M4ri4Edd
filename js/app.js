@@ -25,26 +25,6 @@ const updateSize = () => {
 // Initial size update
 updateSize();
 
-// Reset carousel to the first image
-resetCarousel();
-
-// Event listener for transitionend after initial setup
-carrossel.addEventListener('transitionend', () => {
-    // Reset to the first image after the initial setup
-    if (counter === 0) {
-        resetCarousel();
-    }
-});
-
-// Button listeners
-nextButton.addEventListener('click', () => {
-    // Your existing nextButton click event handler
-});
-
-prevButton.addEventListener('click', () => {
-    // Your existing prevButton click event handler
-});
-
 // Event listener for window resize
 window.addEventListener('resize', updateSize);
 // Button listeners
