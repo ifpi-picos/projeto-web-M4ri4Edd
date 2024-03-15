@@ -25,8 +25,6 @@ const updateSize = () => {
 // Initial size update
 updateSize();
 
-// Event listener for window resize
-window.addEventListener('resize', updateSize);
 // Button listeners
 
 nextButton.addEventListener('click', () => {
