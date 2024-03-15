@@ -180,8 +180,8 @@ main .homepage{
     background-color: #F0D3F7;
     border-radius: 4px;
     overflow: hidden;
-    transition: width 0.5s, height 0.5s;
-    transition-delay: 0s, 0.7s;
+    transition: width 0.2s, height 0.2s;
+    transition-delay: 0s, 0.5s;
 }
 
 .navigation.active{
